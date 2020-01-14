@@ -34,9 +34,9 @@ class episodiosController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(Request $request, Temporada $temporada)
     {
-        //
+        var_dump($temporada->episodios);
     }
 
     /**
