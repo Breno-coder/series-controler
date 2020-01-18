@@ -36,7 +36,7 @@ class episodiosController extends Controller
      */
     public function store(Request $request, Temporada $temporada)
     {
-        var_dump($temporada->episodios);
+        //
     }
 
     /**
@@ -53,12 +53,14 @@ class episodiosController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  int  $id
+     * @param  \Illuminate\Http\Request  $request
+     * @param  Temporada
+     * 
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit(Request $request, Temporada $temporada)
     {
-        //
+        var_dump($temporada->episodios);
     }
 
     /**

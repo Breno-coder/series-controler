@@ -18,4 +18,3 @@ Route::delete('/remover/{id}', 'seriesController@destroy')->name('remover');
 Route::get('/temporadas/{id}', 'temporadaController@index')->name('temporadas');
 Route::post('/editar/{id}', 'seriesController@update');
 Route::get('/ep/{temporada}', 'episodiosController@index')->name('ep');
-//Route::post('/ep/{temporada}/assistir', 'episodiosController@edit')->name('sesson');

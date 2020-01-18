@@ -3,7 +3,7 @@
     Episodios
 @endsection
 @section('content')
-    <form method="post" action="{{ route('sesson', ['temporada'=>$episodios->id]) }}" >
+    <form method="post" action="" >
         @csrf
     <ul class="list-group">
         @foreach ($episodios as $episodio)
@@ -16,3 +16,4 @@
     <button class="btn btn-primary mt-2 mb-2">Salvar</button>
     </form>
 @endsection
+{{ route('sesson', ['temporada'=>$episodios->id])}}
